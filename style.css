@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  min-height: 60vh;
+  background: url(bg\ image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white
+}
+
+ul li a:hover {
+  background: linear-gradient(to right, deepskyblue, darkblue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  border: 2px solid white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  width: 90%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 8vh;
+  align-items: center;
+  font-size: 1.5rem
+}
+
+.nav-items {
+  width: 40%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.headline {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: larger;
+  border-radius: 100px;
+  color: white;
+  background-color: blue;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, deepskyblue, darkblue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  border: 2px solid white;
+}
+
+.btn-handline {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.todo-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.form-Todo {
+  min-height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.form-Todo input {
+  min-height: 100%;
+}
+
+.form-Todo input[type="text"] {
+  width: 78%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.form-Todo input[type="submit"] {
+  width: 20%;
+  font-weight: bold;
+}
+
+.todo-list {
+  text-align: left;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+
+.todo-list li {
+  padding: 0.7rem;
+  background-color: #444;
+  color: white;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section-singup {
+  margin: 5rem auto;
+  text-align: center;
+  background: rgb(225, 222, 222);
+  padding: 1rem;
+}
+
+.signup-form {
+  max-width: 800px;
+  width: 95%;
+  margin: auto;
+  text-align: left;
+  font-size: 20px;
+}
+
+.signup-form label {
+  display: block;
+}
+
+.signup-form input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+.signup-form textarea {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.signup-btn {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  display: block;
+  margin: auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: larger;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.signup-btn:hover {
+  background: linear-gradient(to right left, rgb(24, 33, 36), black);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+
+
+/* Default styles for the nav */
+.nav {
+  flex-wrap: wrap;
+  /* Allow wrapping */
+}
+
+.nav-items {
+  flex-direction: row;
+  /* Horizontal alignment by default */
+}
+
+/* Styles for 360px and below */
+@media (max-width: 360px) {
+  .nav {
+    flex-direction: column;
+    /* Vertical alignment for small screens */
+    align-items: center;
+    /* Center align */
+  }
+
+  .nav-items {
+    width: 100%;
+    /* Full width for navbar */
+    justify-content: center;
+    /* Center items */
+    font-size: 1.2rem;
+    /* Smaller font size */
+  }
+
+  .headline h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-handline {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Styles for 720px */
+@media (min-width: 361px) and (max-width: 720px) {
+  .nav {
+    flex-direction: row;
+    /* Horizontal alignment */
+  }
+
+  .nav-items {
+    font-size: 1.5rem;
+    /* Adjusted font size */
+  }
+
+  .headline h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn-handline {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Styles for 1300px */
+@media (min-width: 721px) and (max-width: 1300px) {
+  .nav-items {
+    font-size: 2rem;
+    /* Normal font size */
+  }
+
+  .headline h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Styles for larger screens */
+@media (min-width: 1301px) {
+  .nav {
+    font-size: 1.5rem;
+    /* Normal font size */
+  }
+
+  .headline h2 {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My website</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <h1 class="logo">my website </h1>
+      <ul class="nav-items">
+        <li><a href="">Home</a></li>
+        <li><a href="">Todo</a></li>
+        <li><a href="">Sign up</a></li>
+      </ul>
+    </nav>
+
+    <div class="headline">
+      <h2 id="main-heading">Manage your Task</h2>
+      <button class="btn btn-handline">Learn More</button>
+    </div>
+  </header>
+  <section class="todo-section container">
+    <h2>your plan for today</h2>
+
+
+    <form class="form-Todo">
+      <input type="text" name="" id="" placeholder="Add Todo">
+      <input type="submit" value="Add Todo" class="btn">
+    </form>
+
+
+    <ul class="todo-list">
+      <span class="text"></span>
+      <li>
+        <span class="text">Do this Do that</span>
+        <div class="todo-buttons">
+          <button class="todo-btn done">Done</button>
+          <button class="todo-btn remove">remove</button>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section-singup container">
+    <h2>Sign Up</h2>
+    <form class="signup-form">
+
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="Enter your Name">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter Your Password">
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm your Password">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your number">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email">
+      </div>
+
+      <div class="form-group">
+        <label for="username">About Your Self</label>
+        <textarea name="about" id="about" rows="5" cols="10" placeholder="About your Self"></textarea>
+      </div>
+
+      <button type="submit" class="signup-btn">Submit</button>
+
+    </form>
+  </section>
+</body>
+
+</html>
